@@ -1,0 +1,74 @@
+.content{
+    width: 34.375rem;
+    height: 26rem;
+    background-color: $black;
+    border-radius: $radius;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 4.6875rem;
+    padding-right: 4.6875rem;
+    box-sizing: border-box;
+
+    h1{
+        color: $white;        
+        font-size: 2.25rem; 
+    }
+
+    p{
+        color: $white;  
+        font-size: 1rem;
+    }   
+
+    form{
+        margin-top: 2.1875rem;
+        display: flex;
+        flex-direction: column;
+        row-gap: .9375rem;
+
+        input{
+            background-color: $gray-dark;
+            border: none;
+            border-radius: $radius;
+            padding: .9375rem;
+            color: $white;
+        }
+
+        ::placeholder{
+            color: $gray-light;
+            font-size: 1rem;
+        }
+
+    }
+
+    button{
+        @include btn();
+
+        &:hover{
+            background-image: linear-gradient(to right, $brand-dark, $brand-light);
+        }
+
+    }
+    
+
+    @media (max-width: 600px){        
+        width: 90%;
+        padding-left: 1.875rem;
+        padding-right: 1.875rem;        
+
+        h1{
+            font-size: 1.5rem;
+        }
+
+        p{
+            font-size: .875rem;
+        }
+
+    }
+
+}
+
+.result{
+    row-gap: 1.875rem;
+}

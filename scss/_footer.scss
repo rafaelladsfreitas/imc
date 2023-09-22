@@ -1,0 +1,28 @@
+footer{
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+    padding: 20px;
+    box-sizing:  border-box;
+    position: fixed;
+    bottom: 0;
+
+
+p{
+    color: white;
+    font-size: 14px;
+}
+
+button{
+    @include btn(); //acionando o mixin
+    width: 200px;
+}
+
+@media (max-width: 850px){
+    flex-direction: column;
+    text-align: center;
+    row-gap: 10px;
+    }
+}

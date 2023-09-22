@@ -1,0 +1,11 @@
+@mixin btn(){
+    border: none;
+    border-radius: 20px;
+    background-image: linear-gradient(to right, $brand-light, $brand-dark);
+    padding: .625rem 0;
+    cursor: pointer;
+    
+    &:hover{
+        background-image: linear-gradient(to right, $brand-dark, $brand-light);
+    }
+}
